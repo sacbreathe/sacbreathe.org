@@ -1,0 +1,284 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>Untitled</title>
+	<LINK rel="stylesheet" type="text/css" href="../font.css">
+<script language="JavaScript">	
+	function ValidateFields(frm)
+	{
+		if ( frm.DeceasedName.value == "" )
+		{
+			alert( "Please enter the Deceased's name." );
+			return false;
+		}
+		
+		if ( frm.ContributorsName.value == "" )
+		{
+			alert( "Please enter the Contributor's name." );
+			return false;
+		}
+	return true;
+	}
+</SCRIPT>
+
+<style type="text/css">
+<!--
+.style1 {
+	font-size: 12px;
+	font-style: italic;
+}
+.style2 {
+	color: #000000;
+	font-style: italic;
+}
+-->
+</style>
+</head>
+
+<body>
+<h1 align="CENTER" class="style2" >Memorial Donation Form</h1>
+<form method="POST" action="/scripts/mailto.exe">
+<input type="hidden" name="sendto" value="jwarren@saclung.org">
+<input type="hidden" name="server" value="mail.midtown.net">
+<input type="hidden" name="Subject" value="Memorial Donation Form">
+<input type="hidden" name="resulturl" value="https://secure.midtown.net/saclung/thankyou.htm">
+
+<table width="550" border="2" align="CENTER" cellpadding="0" cellspacing="0" bordercolor="#000000" bordercolorlight="Blue" bgcolor="#B3B3B3">
+<tr>
+<td bordercolor="#000000">
+
+        <table width="550" border="0" cellpadding="0" cellspacing="0" bordercolor="#000000" bgcolor="#B3B3B3">
+          <tr> 
+            <td width="1%">&nbsp;</td>
+            <td width="20%">&nbsp;</td>
+            <td width="34%">&nbsp;</td>
+          </tr>
+          <tr> 
+            <td width="1%" align="LEFT">&nbsp;</td>
+            <td width="20%"> 
+              <div align="left"><b>Name of the Deceased</b></div>
+            </td>
+            <td width="34%"> 
+              <input type="Text" name="DeceasedName" size="30" maxlength="50">
+            </td>
+            <td width="45%"></td>
+          </tr>
+          <tr> 
+            <td width="1%" align="LEFT">&nbsp;</td>
+            <td colspan="2"><B><font size=-1><br>
+              Name and Address of Deceased's Family:</font></b>&nbsp;</td>
+            <td width="45%"></td>
+          </tr>
+          <tr> 
+            <td width="1%" align="LEFT">&nbsp;</td>
+            <td colspan="2">&nbsp;</td>
+            <td width="45%"></td>
+          </tr>
+          <tr> 
+            <td width="1%" align="LEFT">&nbsp;</td>
+            <td width="20%"><B><font size=-1>Name:&nbsp;</font></b></td>
+            <td width="34%"> 
+              <input type="Text" name="DeceasedFamilyInfo" size="30" maxlength="50">
+            </td>
+          </tr>
+          <tr> 
+            <td width="1%" align="LEFT">&nbsp;</td>
+            <td width="20%"><B><font size=-1>Address:&nbsp;</font></b></td>
+            <td width="34%"> 
+              <input type="Text" name="DeceasedAddress" size="30" maxlength="50">
+            </td>
+          </tr>
+          <tr> 
+            <td width="1%">&nbsp;</td>
+            <td width="20%"><B><font size=-1>City:&nbsp;</font></b></td>
+            <td width="34%"> 
+              <input type="Text" name="DeceasedCity" size="30" maxlength="50">
+            </td>
+          </tr>
+          <tr> 
+            <td width="1%">&nbsp;</td>
+            <td width="20%"><B><font size=-1>State:&nbsp;</font></b></td>
+            <td width="34%"> 
+              <input type="Text" name="DeceasedState" size="2" maxlength="2">
+            </td>
+          </tr>
+          <tr> 
+            <td width="1%">&nbsp;</td>
+            <td width="20%"><B><font size=-1>Zip:&nbsp;</font></b></td>
+            <td width="34%"> 
+              <input type="Text" name="DeceasedZip" size="10" maxlength="10">
+            </td>
+          </tr>
+          <tr> 
+            <td width="1%">&nbsp;</td>
+            <td width="20%">&nbsp;</td>
+            <td width="34%">&nbsp;</td>
+          </tr>
+          <tr> 
+            <td width="1%" align="LEFT">&nbsp;</td>
+            <td colspan="2"><B><font size=-1><br>
+              Contributor's Name, Address and Phone:</font></b>&nbsp;</td>
+            <td width="45%"></td>
+          </tr>
+          <tr> 
+            <td width="1%" align="LEFT">&nbsp;</td>
+            <td colspan="2">&nbsp;</td>
+            <td width="45%"></td>
+          </tr>
+          <tr> 
+            <td width="1%" align="LEFT">&nbsp;</td>
+            <td width="20%"><B><font size=-1>Name:&nbsp;</font></b></td>
+            <td width="34%"> 
+              <input type="Text" name="ContributorsName" size="30" maxlength="50">
+            </td>
+          </tr>
+          <tr> 
+            <td width="1%" align="LEFT">&nbsp;</td>
+            <td width="20%"><B><font size=-1>Address:&nbsp;</font></b></td>
+            <td width="34%"> 
+              <input type="Text" name="ContributorsAddress" size="30" maxlength="50">
+            </td>
+          </tr>
+          <tr> 
+            <td width="1%">&nbsp;</td>
+            <td width="20%"><B><font size=-1>City:&nbsp;</font></b></td>
+            <td width="34%"> 
+              <input type="Text" name="ContributorsCity" size="30" maxlength="50">
+            </td>
+          </tr>
+          <tr> 
+            <td width="1%">&nbsp;</td>
+            <td width="20%"><B><font size=-1>State:&nbsp;</font></b></td>
+            <td width="34%"> 
+              <input type="Text" name="ContributorsState" size="2" maxlength="2">
+            </td>
+          </tr>
+          <tr> 
+            <td width="1%">&nbsp;</td>
+            <td width="20%"><B><font size=-1>Zip:&nbsp;</font></b></td>
+            <td width="34%"> 
+              <input type="Text" name="ContributorsZip" size="10" maxlength="10">
+            </td>
+          </tr>
+          <tr>
+            <td align="LEFT">&nbsp;</td>
+            <td><strong>E-mail Address:</strong></td>
+            <td><input type="Text" name="ContributorsEmail"></td>
+          </tr>
+          <tr> 
+            <td width="1%" align="LEFT">&nbsp;</td>
+            <td width="20%"><B><font size=-1>Phone:&nbsp;</font></b></td>
+            <td width="34%"> 
+              <input type="Text" name="ContributorsPhone" size="14" maxlength="20">
+            </td>
+          </tr>
+          <tr> 
+            <td width="1%">&nbsp;</td>
+            <td width="20%">&nbsp;</td>
+          </tr>
+        </table>
+<hr>
+        <table width="550" border="0" cellspacing="0" cellpadding="0" bgcolor="#B3B3B3">
+          <tr>
+            <td width="5%">&nbsp;</td>
+            <td width="35%"><B><font size=-1>Amount Being Contributed:&nbsp;</font></b></td>
+            <td width="60%">
+              <input type="Text" name="ContributorAmt" size="10" maxlength="10">
+            </td>
+          </tr>
+          <tr>
+            <td width="5%">&nbsp;</td>
+            <td width="35%"> 
+              <p><B><font size=-1>Credit Card Number:<br>
+                </font></b><font size=-1><font size="-2"><i><font size="-1">Visa 
+                &amp; MasterCard only please</font></i></font></font><i><font size="-1">.</font></i></p>
+            </td>
+            <td width="60%">
+              <input type="text" name="ContributorCCNum" size="23" value="">
+            </td>
+          </tr>
+          <tr>
+            <td width="5%">&nbsp;</td>
+            <td width="35%"><B><font size=-1>Credit Card Exp Date:&nbsp;</font></b></td>
+            <td width="60%"> 
+              <select name="CCExpMM" size="1">
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <option value="04">04</option>
+                <option value="05">05</option>
+                <option value="06">06</option>
+                <option value="07">07</option>
+                <option value="08">08</option>
+                <option value="09">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select>
+              <select name="CCExpYY" size="1">
+                <option value="2005">2005</option>
+                <option value="2006">2006</option>
+                <option value="2007">2007</option>
+                <option value="2008">2008</option>
+                <option value="2009">2009</option>
+                <option value="2010">2010</option>
+                <option value="2011">2011</option>
+                <option value="2012">2012</option>
+                <option value="2012">2013</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td>&nbsp;</td>
+            <td><strong>CVV2#: </strong><span class="style1">(last 3 numbers on back of card in signature box) </span></td>
+            <td><input type="text" name="ContributorCCNum" size="23" value=""></td>
+          </tr>
+          <tr>
+            <td width="5%">&nbsp;</td>
+            <td width="35%"><b><font size=-1>Credit Card Signed As:&nbsp;</font></b></td>
+            <td width="60%" bordercolor="#000000">
+              <input type="Text" name="ContributorSignedAs" size="40" maxlength="40">
+            </td>
+          </tr>
+          <tr>
+            <td width="5%">&nbsp;</td>
+            <td width="35%"><B><font size=+1>
+              <input type="Button" value="Submit Donation" onClick="if (ValidateFields(this.form)) this.form.submit();" name="Button">
+              </font></b></td>
+            <td width="60%">
+              <input type="reset" value="Clear Form" name="reset">
+            </td>
+          </tr>
+        </table>
+    </tr>
+</table>
+
+  <br>
+  <br>
+  <table align="center">
+    <tr>
+      <td>This is a secure page. All information is being encrypted.</td>
+    </tr>
+    <tr>
+      <td>For questions or to donate via phone, Please call</td>
+    </tr>
+    <tr>
+      <td><strong>The American Lung Association-Sacramento Emigrant Trails</strong></td>
+    </tr>
+    <tr>
+      <td>(916) 444-5864</td>
+    </tr>
+  </table>
+
+
+
+
+
+
+</form>
+
+
+
+</body>
+</html>
