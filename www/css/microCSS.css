@@ -1,0 +1,221 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,600,600i|Open+Sans:300,700');
+
+*{
+	padding: 0;
+	margin: 0;
+/*	border: 1px dashed;*/
+	font-size: 18px;
+	font-family: "Open Sans";
+	font-weight: 300;
+	line-height: 1.5em;
+}
+
+body {
+	background-image: url("../breathefest/images/railyards.jpg");
+	background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/*general components*/
+section {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding: 3em 1em;
+}
+section:not(.inset){
+	background-color: #fff;
+}
+
+.content {
+	width: 100%;
+	max-width: 864px;
+}
+
+article {
+	width: 100%;
+}
+
+a.button {
+	opacity: 1;
+	padding: .5em;
+	background-color: #ff8282;
+	color: #fff;
+	box-shadow: 0px 10px 20px -6px rgba(0,0,0,0.25);
+}
+
+.lineBreak {
+	padding-bottom: 18px;
+}
+.card {
+	background-color: #fff;
+	padding: 2em 1em;
+	box-shadow: 0px 10px 20px -6px rgba(0,0,0,0.75);
+}
+.inset{
+	box-shadow: inset 0px 10px 20px -6px rgba(0,0,0,0.75);
+}
+img.mainIllus{
+	max-width: 360px;
+}
+
+/*general typography*/
+h1{
+	font-family: "montserrat", sans-serif;
+	font-weight: 300;
+	font-size: 3em;
+	padding-bottom: .33em;
+}
+h2{
+	font-family: "montserrat", sans-serif;
+	font-weight: 300;
+	font-size: 2em;
+	padding-bottom: .5em;
+}
+p{
+	padding-bottom: 1em;
+}
+a {
+	text-decoration: none;
+	color: #000;
+	opacity: .50;
+	transition: ease-in-out, opacity .25s ease-in-out;
+	font-size: inherit;
+	font-family: inherit;
+	font-weight: inherit;
+}
+a:hover{
+	opacity: 1;
+}
+
+strong {
+	font-family: "Montserrat", sans-serif;
+	font-weight: 600;
+/*	font-style: italic;*/
+	font-size: 3em;
+	display: inline-block;
+	width: 100%;
+	line-height: 1.5em;
+	padding-bottom: .5em;
+}
+strong span.lite{
+	font-family: "Montserrat", sans-serif;
+	font-weight: 400;
+	font-size: 1em;
+	color: #bfbfbf;
+	z-index: inherit;
+}
+
+/*list types*/
+ul.text{
+	padding-bottom: 1em;
+}
+ul.text li {
+	margin-left: 2em;
+}
+ul.iconGrid {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	padding-bottom: 1em;
+}
+ul.iconGrid li {
+	text-align: center;
+	display: inline-block;
+	flex: 1;
+	flex-shrink: 1;
+	flex-grow: 0;
+	flex-basis: 180px;
+}
+ul.iconGrid li img{
+	width: 100%;
+}
+
+ul.sponsorList {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+ul.sponsorList li {
+	text-align: center;
+	display: inline-block;
+/*	flex: 1;*/
+	flex-shrink: 1;
+	flex-grow: 0;
+	line-height: 2em;
+/*	flex-basis: 180px;*/
+}
+
+
+/*Nav-specific*/
+nav {
+	z-index: 1;
+	margin-top: -2em;
+	position: fixed;
+	width: 100%;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	background-color: #105f49;
+}
+nav #brandName{
+	font-family: "montserrat", sans-serif;
+	font-weight: 600;
+}
+nav a {
+	opacity: 1;
+	color: white;
+	text-decoration: none;
+	transition: ease-in-out, text-decoration .35s ease-in-out;
+	padding: .5em;
+	display: inline-block;
+}
+nav a:hover{
+	text-decoration: underline;
+}
+nav ul li {
+	display: inline-block;
+}
+
+/*Engagement section-specific*/
+#ticket {
+	margin-top: 2em;
+	text-align: center;
+}
+#ticket > *{
+/*	flex: 1 100%;*/
+}
+#ticket h1 {
+	font-size: 3em;
+}
+
+/*Details*/
+
+/*Media queries*/
+/*larger than phone styles*/
+@media (min-width: 768px) {
+    nav ul li#hamburger{
+		display: none;
+	}
+}
+
+/*phone and smaller styles*/
+@media (max-width: 768px) {
+    nav ul li:not(#hamburger){
+        display: none;
+    }
+	nav:hover ul li#hamburger{
+        display: none;
+    }
+	nav:hover ul li:not(#hamburger){
+		display: block;
+	}
+	a {
+		opacity: 1;
+	}
+}
+
